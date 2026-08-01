@@ -1,8 +1,31 @@
 aid: snapdeal
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/snapdeal.png
 name: SnapDeal
-description: 'SnapDeal is a company surfaced as a portfolio company of bessemer-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Snapdeal is an Indian e-commerce marketplace founded in February 2010 by Kunal
+  Bahl and Rohit Bansal and headquartered in Gurugram/New Delhi. It began as a
+  daily-deals platform and grew into a value-focused online marketplace that
+  connects third-party sellers with buyers across categories such as fashion,
+  home and kitchen, electronics accessories, and general merchandise, primarily
+  serving price-sensitive shoppers in India's smaller cities and towns. Sellers
+  onboard and manage catalog, orders, and payouts through the Snapdeal seller
+  portal (seller.snapdeal.com). Snapdeal has been backed by investors including
+  SoftBank, Bessemer Venture Partners, Nexus Venture Partners, and Kalaari
+  Capital. This profile was surfaced as a portfolio company of Bessemer Venture
+  Partners; enrichment found no public developer portal, no api.snapdeal.com or
+  developer.snapdeal.com host, and no published API specification or well-known
+  discovery surface — the seller portal is login-gated behind SSO.
 url: https://raw.githubusercontent.com/api-evangelist/snapdeal/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +35,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- E-commerce
+- Marketplace
+- Retail
+- Online Shopping
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +51,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/snapdeal-domain-security.yml
 - type: Website
   url: https://www.snapdeal.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1

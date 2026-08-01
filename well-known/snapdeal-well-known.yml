@@ -1,0 +1,36 @@
+generated: '2026-07-21'
+method: probed
+source: live probes of /.well-known/* on snapdeal hosts
+host: https://www.snapdeal.com
+note: >-
+  www.snapdeal.com returns HTTP 403 (bot protection) for all paths including
+  /.well-known/*. seller.snapdeal.com returns HTTP 200 for every path but the
+  body is an identical Next.js SPA/SSO catch-all shell (text/html), not a real
+  well-known document, so no genuine discovery documents were found. Absence is
+  a valid, expected result and no WellKnown/SecurityTxt pointer is wired.
+documents:
+- path: /.well-known/security.txt
+  host: www.snapdeal.com
+  status: 403
+  file: null
+- path: /.well-known/openid-configuration
+  host: www.snapdeal.com
+  status: 403
+  file: null
+- path: /.well-known/oauth-authorization-server
+  host: www.snapdeal.com
+  status: 403
+  file: null
+- path: /.well-known/api-catalog
+  host: www.snapdeal.com
+  status: 403
+  file: null
+- path: /.well-known/ai-plugin.json
+  host: www.snapdeal.com
+  status: 403
+  file: null
+- path: /.well-known/security.txt
+  host: seller.snapdeal.com
+  status: 200
+  file: null
+  note: SPA catch-all HTML, not a genuine security.txt
