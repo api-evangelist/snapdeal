@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "snapdeal",
+    "captured_at": "2026-10-11T192905",
+    "source_url": "https://www.snapdeal.com/",
+    "source_type": "Website",
+    "file": "snapdeal-2026-10-11T192905.png",
+    "bytes": 42873,
+    "capture": "playwright-local"
+  }
+]
