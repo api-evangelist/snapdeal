@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/snapdeal/integrations
+- https://n8n.io/integrations/snapdeal/
+- https://composio.dev/toolkits/snapdeal
+- https://monid.ai/tools/snapdeal
+checked:
+- https://composio.dev/toolkits/snapdeal
+- https://monid.ai/tools/snapdeal
+- https://n8n.io/integrations/snapdeal/
+- https://zapier.com/apps/snapdeal/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
